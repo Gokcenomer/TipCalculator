@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     
+    <main class="container">
+        
+            <h1> Tip Calculator</h1>
+            
+            <div class="billAmount ">
+                <label for="billAmount">How much was your bill?</label>
+                <br>
+                $<input type="text" name="billAmount" id="billAmount">
+            </div>
+            
+            <div class="serviceQuality">
+                <label for="serviceQuality">How was your service?</label>
+                <br>
+                <select name="" id="serviceQuality">
+                    <option disabled selected value="0" >Choose an optin</option>
+                    <option value="0.3">30% Great</option>
+                    <option value="0.2">20% Good</option>
+                    <option value="0.15">15% Average</option>
+                    <option value="0.10">10% Bad</option>
+                    <option value="0.05">5% Terrible</option>
+        
+        
+                </select>
+            </div>
+           
+            <div class="peopleCount">
+                <label for="peopleCount">How many people are sharing the bill?></label>
+                <br>
+                <input type="text" name="peopleCount" id="peopleCount">    
+            </div>
+    
+            
+    
+            
+            <button id="calculate">Calculate</button>
+    
+       
+      
+
+    </main>
 </body>
 </html>
